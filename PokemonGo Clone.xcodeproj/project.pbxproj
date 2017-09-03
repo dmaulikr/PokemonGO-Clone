@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A62DB1D1F5C2EA600A6FCCB /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A62DB1C1F5C2EA600A6FCCB /* PokedexViewController.swift */; };
 		3AEDC8F21F5858AB0089B467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDC8F11F5858AB0089B467 /* AppDelegate.swift */; };
 		3AEDC8F41F5858AB0089B467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDC8F31F5858AB0089B467 /* ViewController.swift */; };
 		3AEDC8F71F5858AB0089B467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEDC8F51F5858AB0089B467 /* Main.storyboard */; };
 		3AEDC8FA1F5858AB0089B467 /* PokemonGo_Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDC8F81F5858AB0089B467 /* PokemonGo_Clone.xcdatamodeld */; };
 		3AEDC8FC1F5858AB0089B467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEDC8FB1F5858AB0089B467 /* Assets.xcassets */; };
 		3AEDC8FF1F5858AB0089B467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEDC8FD1F5858AB0089B467 /* LaunchScreen.storyboard */; };
+		3AEDC9081F5859080089B467 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEDC9071F5859080089B467 /* MapKit.framework */; };
+		3AFA7EF31F5AE8FF006A8F31 /* CoreDataPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA7EF21F5AE8FF006A8F31 /* CoreDataPokemon.swift */; };
+		3AFA7EF51F5AF208006A8F31 /* PokemonAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA7EF41F5AF208006A8F31 /* PokemonAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A62DB1C1F5C2EA600A6FCCB /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		3AEDC8EE1F5858AB0089B467 /* PokemonGo Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokemonGo Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEDC8F11F5858AB0089B467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AEDC8F31F5858AB0089B467 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		3AEDC8FB1F5858AB0089B467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AEDC8FE1F5858AB0089B467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AEDC9001F5858AB0089B467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AEDC9071F5859080089B467 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3AFA7EF21F5AE8FF006A8F31 /* CoreDataPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPokemon.swift; sourceTree = "<group>"; };
+		3AFA7EF41F5AF208006A8F31 /* PokemonAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AEDC9081F5859080089B467 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				3AEDC8F01F5858AB0089B467 /* PokemonGo Clone */,
 				3AEDC8EF1F5858AB0089B467 /* Products */,
+				3AEDC9061F5859080089B467 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +68,24 @@
 			children = (
 				3AEDC8F11F5858AB0089B467 /* AppDelegate.swift */,
 				3AEDC8F31F5858AB0089B467 /* ViewController.swift */,
+				3A62DB1C1F5C2EA600A6FCCB /* PokedexViewController.swift */,
 				3AEDC8F51F5858AB0089B467 /* Main.storyboard */,
+				3AFA7EF21F5AE8FF006A8F31 /* CoreDataPokemon.swift */,
+				3AFA7EF41F5AF208006A8F31 /* PokemonAnnotation.swift */,
 				3AEDC8FB1F5858AB0089B467 /* Assets.xcassets */,
 				3AEDC8FD1F5858AB0089B467 /* LaunchScreen.storyboard */,
 				3AEDC9001F5858AB0089B467 /* Info.plist */,
 				3AEDC8F81F5858AB0089B467 /* PokemonGo_Clone.xcdatamodeld */,
 			);
 			path = "PokemonGo Clone";
+			sourceTree = "<group>";
+		};
+		3AEDC9061F5859080089B467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AEDC9071F5859080089B467 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFA7EF31F5AE8FF006A8F31 /* CoreDataPokemon.swift in Sources */,
 				3AEDC8F41F5858AB0089B467 /* ViewController.swift in Sources */,
 				3AEDC8FA1F5858AB0089B467 /* PokemonGo_Clone.xcdatamodeld in Sources */,
+				3A62DB1D1F5C2EA600A6FCCB /* PokedexViewController.swift in Sources */,
+				3AFA7EF51F5AF208006A8F31 /* PokemonAnnotation.swift in Sources */,
 				3AEDC8F21F5858AB0089B467 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +303,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3TBYKSQUS6;
 				INFOPLIST_FILE = "PokemonGo Clone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matheus.lima.PokemonGo-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3TBYKSQUS6;
 				INFOPLIST_FILE = "PokemonGo Clone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matheus.lima.PokemonGo-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
