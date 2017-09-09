@@ -62,7 +62,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let annotation = view.annotation
-        let pokemon = (annotation as! PokemonAnnotation).pokemon
         // Possibilitar varios cliques na anotacao
         mapView.deselectAnnotation(annotation, animated: true)
 
@@ -70,10 +69,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             return
         }
         
+        let pokemon = (annotation as! PokemonAnnotation).pokemon
+        
         if let coordinateAnnotation = annotation?.coordinate {
-            self.centerRegion(coordinate: coordinateAnnotation, 75, 75)
+            self.centerRegion(coordinate: coordinateAnnotation, 100, 100)
         }
         
+        // Verificar se pode capturar o pokemon
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
             if self.capturePokemon(pokemon: pokemon) {
                 self.coreDataPokemon.savePokemon(pokemon: pokemon)
@@ -155,6 +157,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             annotation.coordinate.longitude += randomLon
             
             self.mapView.addAnnotation(annotation)
+            
+            // Random number between 60 and 90
+            let removePokemonTimer: Int = Int(arc4random_uniform(60)) + 90
+            Timer.scheduledTimer(withTimeInterval: TimeInterval(removePokemonTimer), repeats: false, block: { (timer) in
+                self.mapView.removeAnnotation(annotation)
+            })
         }
     }
     
